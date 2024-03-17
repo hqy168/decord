@@ -183,8 +183,8 @@ using AVFilterContextPtr = std::unique_ptr<
     AVFilterContext, Deleter<AVFilterContext, void, avfilter_free> >;
 
 
-using AVBSFContextPtr = std::unique_ptr<
-    AVBSFContext, Deleterp<AVBSFContext, void, av_bsf_free> >;
+// using AVBSFContextPtr = std::unique_ptr<
+//     AVBSFContext, Deleterp<AVBSFContext, void, av_bsf_free> >;
 
 using AVCodecParametersPtr = std::unique_ptr<
     AVCodecParameters, Deleterp<AVCodecParameters, void, avcodec_parameters_free> >;
